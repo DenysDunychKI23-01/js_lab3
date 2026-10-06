@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №3 — Функції в JavaScript</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 900px; margin: 40px auto; padding: 20px; background-color: #f4f6f9; color: #333; }
+        h1, h2 { color: #2c3e50; text-align: center; }
+        .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .btn-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 15px; }
+        button { background-color: #28a745; color: white; border: none; padding: 12px; border-radius: 5px; cursor: pointer; font-size: 14px; transition: background-color 0.2s; }
+        button:hover { background-color: #218838; }
+        .out-box { margin-top: 15px; padding: 15px; background: #e9ecef; border-radius: 5px; font-weight: bold; font-size: 16px; text-align: center; min-height: 24px; }
+        .info { background: #e8f4f8; padding: 15px; border-left: 5px solid #17a2b8; border-radius: 4px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>Лабораторна робота №3</h1>
+    <h2>Тема: Функції в JavaScript</h2>
+    <p style="text-align: center;"><b>Виконав:</b> Дунич Денис, група КІ-23-01</p>
+
+    <div class="section">
+        <h3>Рівень 4–6 балів</h3>
+        <div class="btn-grid">
+            <button onclick="task4_1()">1. Персональне привітання</button>
+            <button onclick="task4_2()">2. Оцінка студента</button>
+            <button onclick="task4_3()">3. Обчислення чайових</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Рівень 7–9 балів</h3>
+        <div class="btn-grid">
+            <button onclick="task7_1()">1. Таймер з колбеком</button>
+            <button onclick="task7_2()">2. Калькулятор</button>
+            <button onclick="task7_3()">3. Лічильник (Замикання)</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Рівень 10–12 балів</h3>
+        <div class="btn-grid">
+            <button onclick="startRandomGenerator()">1. Генератор рандомних чисел</button>
+            <button onclick="task10_2()">2. Генератор паролів</button>
+            <button onclick="task10_3()">3. Генератор діалогів (Чат-бот)</button>
+            <button id="hello">4. Тест контексту (bind/this)</button>
+        </div>
+        
+        <div style="margin-top: 15px; text-align: center;">
+            <button id="next" style="display: none; background-color: #007bff;">Next number</button>
+        </div>
+        <div id="out" class="out-box">Результат дій виводитиметься тут або в консолі</div>
+    </div>
+
+    <div class="info">
+        💡 <b>Примітка:</b> Для перегляду роботи замикань та додаткових виводів відкрийте консоль браузера (<b>F12</b>).
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
